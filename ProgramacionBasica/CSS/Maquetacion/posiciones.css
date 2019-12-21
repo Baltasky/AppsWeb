@@ -1,0 +1,35 @@
+ #cabecera{
+        background: yellow;
+ 	position:absolute;
+ 	top: 2%;
+ 	left:2%;
+ 	width: 93%;
+ 	height: 10%;
+ }
+
+  #indice{
+        background: orange;
+ 	position:absolute;
+ 	top: 13%;
+ 	left:2%;
+ 	width: 25%;
+ 	height: 75%;
+ }
+
+   #contenido{
+        background: red;
+ 	position:absolute;
+ 	top: 13%;
+ 	left:30%;
+ 	width: 65%;
+ 	height: 75%;
+ }
+
+   #piedepagina{
+        background:#F0F;
+ 	position:absolute;
+ 	top: 89%;
+ 	left:30%;
+ 	width: 65%;
+ 	height: 10%;
+ }
