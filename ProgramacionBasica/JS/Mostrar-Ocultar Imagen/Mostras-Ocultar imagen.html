@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mostrar-Ocultar Imagen</title>
+    <style>
+        #avatar{
+                display: none;
+            }
+        </style>
+</head>
+
+<body>
+    <div>
+        <input id="btnMostrarOcultar" type="button" value="Mostrar/Ocultar" onclick="mostrarOcultarImg()">
+    </div>
+    <div id="avatar"><img src="Avatar.jpg" alt="Avatar"></div>
+    <script>
+
+        function mostrarOcultarImg() {
+
+            var estadoActual = document.getElementById("avatar");
+
+            if (estadoActual.style.display == "none") {
+                estadoActual.style.display = "block";
+            }
+            else estadoActual.style.display = "none";
+
+        }
+    </script>
+</body>
+
+</html>
