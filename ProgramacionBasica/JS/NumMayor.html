@@ -1,0 +1,34 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="txtNumeros">
+    <input type="button" id="btnDeterminarMayor" onclick="DeterminarMayor()" value="Calcular Mayor">
+    <input type="text" id="txtNumeroMayor">
+
+    <script>
+        function DeterminarMayor(){
+            debugger;
+            var arreglo = document.getElementById("txtNumeros").value.split(",");
+            
+            var mayor = Number(arreglo[0]);
+             
+            for(var i = 1; i < arreglo.length; i++){
+                if(Number(arreglo[i]) > mayor)
+                {
+                    mayor = Number(arreglo[i]);
+                }
+            }
+
+            document.getElementById("txtNumeroMayor").value = mayor;
+        }
+
+    </script>
+</body>
+
+
+
+</html>

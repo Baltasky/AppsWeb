@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <style>
+        #divSemaforo,
+        #divColores {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+
+<body onload="LoadEvent()">
+
+    <div id="divSemaforo">
+
+    </div>
+    <input type="button" id="btnCambiarColorSemaforo" value="Cambiar Color Semaforo">
+    <hr>
+    <input type="color" id="txtColor">
+    <div id="divColores"></div>
+    <input type="button" id="btnCambiarColorDivColores" value="CambiarColorDivColores">
+
+    <script>
+
+        function LoadEvent() {
+
+            document.getElementById("btnCambiarColorSemaforo").addEventListener("click", function () { CambiarColorSemaforo(); });
+            document.getElementById("btnCambiarColorDivColores").addEventListener("click", function () { CambiarColorDivColores(); });
+        }
+
+
+        function CambiarColorSemaforo() {
+            var divColores = document.getElementById("divSemaforo");
+            var colorActual = divColores.style.backgroundColor;
+
+            switch (colorActual) {
+                case "":
+                    divColores.style.backgroundColor = "green";
+                    break;
+                case "green":
+                    divColores.style.backgroundColor = "yellow";
+                    break;
+                case "yellow":
+                    divColores.style.backgroundColor = "red";
+                    break;
+                case "red":
+                    divColores.style.backgroundColor = "green";
+                    break;
+            }
+
+        }
+
+        function CambiarColorDivColores() {
+
+            var divColores = document.getElementById("divColores");
+            var colorSeleccionado = document.getElementById("txtColor").value;
+
+            divColores.style.backgroundColor = colorSeleccionado;
+        }
+    </script>
+
+</body>
+
+</html>

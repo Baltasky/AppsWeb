@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <input type="number" id="txtPrimerNumero" placeholder="Primer Numero">
+        <input type="number" id="txtSegundoNumero" placeholder="Segundo Numero">
+        <input type="button" id="btnSumar" value="Sumar" onclick="Sumar()">
+        <input type="text" id="txtResultado" placeholder="Resultado" disabled>
+
+        <script>
+            function Sumar() {
+                var primerNumero = document.getElementById("txtPrimerNumero").value;
+                var segundoNumero = document.getElementById("txtSegundoNumero").value;
+
+                var suma = Number(primerNumero) + Number(segundoNumero);
+
+                document.getElementById("txtResultado").value = suma;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" id="txtEjemplo">
+        <input type="button" value="Mostrar texto" onclick="AsignarTexto()">
+        <span id="spanTexto"></span>
+        <span id="spanTexto2"></span>
+
+        <script>
+        
+            function AsignarTexto()
+            {
+                var texto = document.getElementById('txtEjemplo').value;
+                document.getElementById('spanTexto').innerText = texto;
+                document.getElementById('spanTexto2').innerText = texto;
+                alert(texto);
+            }
+        
+        </script>
+    </body>
+
+
+
+</html>

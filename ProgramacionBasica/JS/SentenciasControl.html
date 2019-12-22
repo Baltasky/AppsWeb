@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div>
+        <input type="text" id="txtEdad">
+        <input type="button" value="Llamar funcion" onclick="checarMayorEdad()">
+    </div>
+    <div>
+        <input type="text" id="txtNumeroDia">
+        <input type="button" value="Obtener nombre dia" onclick="obtenerNombreDia()">
+    </div>
+
+    <div>
+        <input type="button" value="Ejecutar For" onclick="functionFor()">
+    </div>
+
+    <div>
+        <input type="button" value="Ejecutar While" onclick="functionWhile()">
+    </div>
+
+    <script>
+        function checarMayorEdad()
+        {
+            var edad = Number(document.getElementById("txtEdad").value);
+
+            if(edad > 18)
+            {
+                alert("Es mayor de edad");
+            }
+            else if(edad == 18)
+            {
+                alert("Tiene exactamente 18 años");
+            }
+            else{
+                alert("Es menor de edad");
+            }
+
+        }
+
+        function obtenerNombreDia()
+        {
+            var numeroDia = document.getElementById("txtNumeroDia").value;
+
+            switch(numeroDia)
+            {
+                case "0":
+                    alert("Domingo");
+                    break;
+                case "1":
+                    alert("Lunes");
+                    break;
+                case "2":
+                    alert("Martes");
+                    break;
+                case "3":
+                    alert("Miercoles");
+                    break;
+                case "4":
+                    alert("Jueves");
+                    break;
+                case "5":
+                    alert("Viernes");
+                    break;
+                case "6":
+                    alert("Sabado");
+                    break;
+                default:
+                    alert("No es un numero de dia valido");
+                    break;
+            }
+
+        }
+
+        function functionFor()
+        {
+            for(var i = 0; i < 5; i++)
+            {
+                alert("Iteracion" + i);
+            }
+        }
+
+        function functionWhile()
+        {
+            var numero = 0;
+
+            while(numero < 5)
+            {
+                alert("Numero = " + numero);
+                numero++;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

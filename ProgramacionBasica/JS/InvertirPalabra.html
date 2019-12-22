@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="txtOriginal">
+    <input type="button" id="btnVotearTexto" onclick="VoltearTexto()" value="Voltear Texto">
+    <input type="text" id="txtAlreves">
+
+    <script>
+        function VoltearTexto() {
+            var textoOriginal = document.getElementById("txtOriginal").value;
+            var textoAlreves = "";
+
+            for (var i = textoOriginal.length - 1; i >= 0; i--) {
+                textoAlreves += textoOriginal[i];
+            }
+
+            document.getElementById("txtAlreves").value = textoAlreves;
+        }
+    </script>
+
+</body>
+</html>
