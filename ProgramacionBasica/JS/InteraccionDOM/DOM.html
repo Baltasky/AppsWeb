@@ -1,0 +1,91 @@
+<html>
+
+<head></head>
+
+<body>
+
+
+    <div>
+        <input type="text" id="txtNuevoColor">
+        <input type="button" id="btnAgregarColor" value="Agregar Color" onclick="AgregarColor()">
+    </div>
+    
+    <div>
+        <ul id="ulColores">
+            <li>Rojo</li>
+            <li>Azul</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div>
+        <input type="text" id="txtNombre" placeholder="Nombre">
+        <input type="text" id="txtApellido" placeholder="Apellido">
+        <input type="button" id="btnAgregarAlumno" value="Agregar Alumno" onclick="AgregarAlumno()">
+    </div>
+    <div>
+        <table id="tblAlumnos"> 
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function AgregarColor(){
+            var nuevoColor = document.getElementById("txtNuevoColor").value;
+
+            //Creamos un nuevo elemento del tipo LI
+            var nuevoElemento = document.createElement("li");
+            //Asignamos contenido al nuevo elemento LI
+            nuevoElemento.innerHTML = nuevoColor;
+
+            //Obtenemos la lista de colores y la guardamos en la variable lista
+            var lista = document.getElementById("ulColores");
+
+            //Agregar el nuevo LI a la lista
+            lista.appendChild(nuevoElemento);
+        }
+
+        function AgregarAlumno()
+        {
+            var nombre = document.getElementById("txtNombre").value;
+            var apellido = document.getElementById("txtApellido").value;
+
+            //Seleccionamos la tabla
+            var tabla = document.getElementById("tblAlumnos");
+
+            //Creamos un nuevo elemento tr y lo guardamos en nuevaFila
+            var nuevaFila = document.createElement("tr");
+            
+            //Creamos un nuevo TD y lo guardamos en nuevoTd1
+            var nuevoTd1 = document.createElement("td");
+            //Asignamos contenido a nuevoTd1
+            nuevoTd1.innerHTML = nombre;
+
+            //Creamos un nuevo TD y lo guardamos en nuevoTd2
+            var nuevoTd2 = document.createElement("td");
+            //Asignamos contenido a nuevoTd2
+            nuevoTd2.innerHTML = apellido;
+
+            //Agregamos tds al tr
+            nuevaFila.appendChild(nuevoTd1);
+            nuevaFila.appendChild(nuevoTd2);
+            
+            //Agregamos el tr a la tabla
+            tabla.appendChild(nuevaFila);
+        }
+    
+    </script>
+
+</body>
+
+</html>
