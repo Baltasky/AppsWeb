@@ -1,0 +1,138 @@
+*{
+	margin: 0; padding: 0;
+
+}
+
+body {
+
+}
+
+h1{font:bold 100px vernada, 
+	sans-serif; 
+	color: blue;
+	text-align: center;
+}
+
+h2{color: blue;}
+
+h4{
+	font:bold 30px vernada, sans-serif; 
+	color: black;}
+
+h5{font:bold 30px vernada, 
+	sans-serif; 
+	color: blue;
+	text-align: center;
+}
+
+header, .main, footer {
+	width:90%;
+	max-width:1000px; 
+	margin:15px auto;
+}
+ 
+ header nav {
+ 	background:blue;
+ 	overflow:hidden;
+ }
+
+ header nav ul {
+ 	list-style:none;
+ }
+
+ header nav ul li {
+ 	float:left; 
+ }
+
+header nav ul li a {
+	padding:17px 25px;
+	display: block;
+	color:#fff;
+	text-decoration:none;
+	font-family: sans-serif;
+}
+
+header nav ul li a:hover {
+	background-color: cornflowerblue;
+}
+
+.main .articles {
+	width:71%;
+	margin-right:1.5%;
+	float:left;
+    font-family:sans-serif;
+} 
+
+.main .articles article{
+	padding:20px;
+	background:#cecece;
+	margin-bottom:20px;
+}
+
+.caja { 
+	 margin-bottom:10px;
+	 padding:30px;
+	 background-color:#cecece;
+	}
+	
+.avatar{
+	text-align: center;
+}
+
+
+.tuno {
+	margin: 10px;
+	padding: 30px;
+	/*overflow: hidden;*/
+	background-color: #cecece;
+	border: 1px solid #1F313C;
+	border-radius: 8px;
+	width:50%;
+	max-width:1000px; 
+	margin:15px auto;
+  }
+  .guitarra ol {
+	padding: 0;
+  }
+
+  .precios{
+	margin: 10px;
+   padding: 20PX;
+	width:95%;
+	font-family:sans-serif;
+	background-color: #cecece;
+}
+
+aside{
+-webkit-box-shadow:0px 2px 2px #000;
+border-radius: 9px;
+}
+
+
+aside {
+	width:20%;
+	background: #8DEEEE ;
+	float:left;
+	padding:20px; 
+	box-sizing:border-box;
+	text-align: center;
+}
+
+#contacts img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+	margin-right: 7px;
+}
+
+
+.img2 {
+	padding: 45px;
+}
+
+footer {
+	background: #000;
+	color:#FFF;
+	clear:both;
+	padding: 9px 0px;
+}
