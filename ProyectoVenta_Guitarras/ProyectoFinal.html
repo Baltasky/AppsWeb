@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Balta Rdz</title>
+    <link href="ProyectoFinal.css" rel="stylesheet">
+    <script src="ProyectoFinal.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="section">
+        <section id="portada" class="portada ">
+            <!-- portada -->
+            <div class="contenedor">
+                <!-- logotipo -->
+                <img src="invie.png" width="186" height="60" alt="Invie logotipo" />
+                <h1 class="titulo">Guitarras inviesibles</h1><!-- titulo -->
+                <h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
+            </div>
+        </section>
+    </header>
+    <!-- Header -->
+
+    <!-- Agregar Producto -->
+    <div class="section">
+        <h2>Nuestras guitarras</h2><!-- titulo -->
+
+        <label for="txtProducto">Producto: </label>
+        <select id="txtProducto" name="Producto" onchange="Change(this);">
+            <option />Seleccionar
+            <option />Invie Telecaster <option /> Invie Stratocaster <option />Invie Les Paul
+            <option />Invie Firebird <option />Invie Jazzmaster <option />Invie Acustica  
+            <option />Invie Classic
+        </select>
+        <label>Precio: </label>
+        <input type="text" id="txtPrecio" placeholder="$00.00 MXN" disabled>
+        <label for="txtCantidad">Cantidad: </label>
+        <input type="number" id="txtCantidad" placeholder="0" min="0" max="10">
+        <button id="btnAgregarProducto" onclick="AgregarProducto()">Agregar Producto</button>
+    </div>
+    <!-- Agregar Producto end -->
+
+    <!-- Tabla de productos agregados -->
+    <div class="section">
+        <table id="tblProductos">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subotal</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table> <br /><br />
+    </div>
+    <!-- Tabla de productos agregados end -->
+
+    <!-- Cobrar -->
+    <div class="section">
+            
+        <label>Total: </label>
+        <input type="text" id="txtTotal" placeholder="$00.00 MXN" disabled>
+        <button id="btncalcularTotal" onclick="calcularTotal()">Calcular Total</button><br /><br />
+        <label for="txtDineroRecibido">Dinero Recibido: </label>
+        <input type="number" id="txtDineroRecibido" maxlength="10" placeholder="$00.00 MXN"> <br /><br />
+        <label>Cambio: </label>
+        <input type="text" id="txtCambio" placeholder="$00.00 MXN" disabled><br /><br />
+        <button id="btnCobrar" onclick="cobrar()">Cobrar</button>
+        <img class="derecha" src="invie-acustica.png" alt="Guitarra Invie Acustica" width="295" />
+        <img class="izquierda" src="invie-classic.png" alt="Guitarra Invie Classic" width="350" />
+    </div>
+    <!--  Cobrar end -->
+
+    <!-- Pie de la página -->
+    <footer class="copyright">
+        &copy; 2019 Coded by Balta Rdz. All rights reserved. <br/>
+        "Declare variables, not war"
+    </footer>
+    <!-- Pie de la página end -->
+    
+</body>
+
+</html>

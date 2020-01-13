@@ -1,0 +1,115 @@
+body {
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#header {
+    background-image: url("background.png");
+    background-size: cover;
+    text-align: left;
+    color: white;
+    padding: 20px;
+}
+
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    margin-bottom: 0;
+    margin-top: 70px;
+    text-align: left;
+  }
+
+  .title-a {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  h2{
+    color: #1F313C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+  }
+  
+.contenedor {
+    width: 800px;
+    margin: auto;
+  }
+
+  .derecha {
+    float: right;
+    position: relative;
+    top: -250px;
+    padding: 0%;
+  }
+  
+  .izquierda {
+    float: left;
+    position: relative;
+    top: -200px;
+    padding: 0%;
+  }  
+
+
+table {
+    width: 100%;
+    font-size: 11pt;
+}
+
+table, th, td {
+    border: 2px solid #cecece;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+
+thead{
+background-color: rgb(0, 156, 247);
+color: white;
+font-weight: bold;
+font-size: 12pt;
+}
+
+button {
+    background-color: #f10b2a;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+
+input, #txtProducto{ 
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: black;
+    border-radius: 5px;
+    width: 10%;
+    
+}
+input:hover{
+    border-color: blue;
+    box-shadow: 0px 0px 4px blue;
+}
+
+.copyright {
+    font-size: 10pt;
+    text-align: right;
+    padding-bottom: 10px;
+    color: grey;
+}
